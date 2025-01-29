@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./src/style.css">
+    <title>Booking Form
+    </title>
+  </head>
+  <body>
+    <!---------------Header------------------>
+      <header>
+
+        <div id="threejs">
+          <canvas></canvas>
+        </div>
+          
+          <div class="herobg">
+            <div class="blob"></div>
+          </div>
+          
+          <div class="heroTxt">
+            <div class="logo">
+              <img src="./public/Imgs/pngwing.com.png">
+
+            <div class="tagline">
+              <span>My Show. My Time. My Seat</span>
+            </div>
+          </div>
+          <div class="btns">
+            <a href="#container" style="transition: all 0.5s ease-in-out;">
+
+              <div class="button">
+                <span>Book&nbsp;Now</span>
+              </div>
+            </a>
+
+          </div>
+          </div>
+    
+      </header>
+      <!---------------Select movie------------------>
+      <div id="container">
+        <div class="select_movies">
+          <div class="heading">
+          Select A Movie
+          </div>
+
+          <div class="flipCards">
+            <div class="cardWrapper">
+              <div class="cardFront">
+                <img src="./public/Imgs/joker2.jpg">
+              </div>
+              <div class="cardBack">
+                <span>Synopsis</span>
+                <p>Joker: Folie à Deux follows Arthur Fleck as he navigates life in Arkham State Hospital after his transformation into the Joker. The story delves into his psychological struggles, his trial for his crimes, and his complex, manipulative relationship with Harleen Quinzel (Lady Gaga), a fellow patient who becomes his partner in chaos.​</p>
+              </div>
+            </div>
+            <div class="cardWrapper">
+              <div class="cardFront">
+                <img src="./public/Imgs/venom.jpg">
+              </div>
+              <div class="cardBack">
+                <span>Synopsis</span>
+                <p>Venom: The Last Dance" marks the final chapter of Eddie Brock and Venom's story. The duo is on the run, hunted by Earthly authorities and alien forces from Venom's home planet, Klyntar. With danger closing in, Eddie and Venom face a critical decision that could seal their fate. Along the way, they confront the symbiote-eating Xenophage, Patrick Mulligan's transformation into Toxin, and a looming alien invasion. The film explores their bond, challenges, and ultimate destiny, blending intense action with emotional depth.​</p>
+              </div>
+            </div>
+            <div class="cardWrapper">
+              <div class="cardFront hanuman">
+                <span>Comming&nbsp;Soon</span>
+                <img src="./public/Imgs/c2755c112fc2dedfa49983e399def0ad.jpg">
+              </div>
+              <div class="cardBack">
+                <span>Synopsis</span>
+                <p>The upcoming movie Jai Hanuman, directed by Prasanth Varma, is an epic sequel to the film Hanu-Man. It continues the story of Hanumanthu, a young man who gains superpowers linked to Lord Hanuman, following the destruction of the mystical Rudra Mani in the previous film. The sequel will expand the narrative, focusing on a battle between good and evil, as Hanumanthu and Lord Hanuman prepare to face an emerging threat from Asuras (demons).​</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+<!-- -------------------Select Hall ----------------->
+        <div id="date">
+          <div class="heading">Select A Date</div> 
+          
+          <div id="Select_date">
+            <input type="date" id="date_input">
+          </div>
+          <div id="Select_location">
+            <span>Vishal Mall, Rajouri Garden</span>
+            <div class="timings">
+              <div class="Time">9:00 AM</div>
+              <div class="Time">12:00 PM</div>
+              <div class="Time">9:00 PM</div>
+            </div>
+          </div>
+          <input type="submit" value="Submit" id="submit_date">
+        </div>
+
+
+<!-- ----------------------------------Select Seats-------------------------->
+        <div class="Select_seats">
+          <div class="heading">
+            Select Seats
+            </div>
+            <div class="movie_hall">
+            </div>
+            <div class="screen"></div>
+            <input type="submit" id="seatsSubmit">
+            <div class="selectedSeats">
+            </div>
+        </div>
+<!---------------------------other Details------ -->
+<div class="OtherDetails">
+  <div class="headings">
+    Contact Details
+    </div>
+    <div class="details">
+      <input type="text" placeholder="Full Name" id="name">
+      <input type="email" placeholder="Email" id="email" required>
+      <input type="email" placeholder="Re-Email" required id="re-email">
+      <input type="number" maxlength="10" placeholder="Contact Number" id="contact" required>
+      <input type="submit" value="Submit" id="submit">
+    </div>
+</div>
+
+<div class="final">
+  <div class="imgg">
+   
+  </div>
+  <div class="txt">
+    <div class="finaldate">
+      <div class="dateee">
+
+      </div>
+      <div class="venue"></div>
+    </div>
+    <div class="myseat">
+    </div>
+    <div class="userdetail">
+
+    </div>
+
+    
+  </div>
+</div>
+
+    </div>
+    <script type="module" src="./src/main.js"></script>
+    <script type="module" src="./src/gsap.js"></script>
+    <script type="module" src="./src/logic.js"></script>
+  </body>
+</html>
